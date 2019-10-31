@@ -1,0 +1,4 @@
+student name: Tim Kompier
+student number: 648814
+student class: INF1C
+URL student GitHub repository: https://github.com/Tim850/TaekwondoHaarlemTimKompier
