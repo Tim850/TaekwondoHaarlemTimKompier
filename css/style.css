@@ -20,14 +20,36 @@ body
 	z-index: -5;
 }
 
+h1
+{
+	font-size: 180%
+}
+
 h2
 {
-	font-size : 1em;
+	font-size: 90%;
 }
 
 img
 {
 	max-width: 100%;
+}
+
+button
+{
+	padding: 0.5em;
+	border: solid;
+	border-width: 0.3em;
+	border-color: #707070;
+	background-color: #444444;
+	color: #add8e6;
+}
+
+button:hover
+{
+	border-width: 0.25em;
+	padding: 0.55em;
+	color: #c1e1ec;
 }
 
 a
@@ -82,25 +104,34 @@ aside
 
 nav
 {
+	/*
 	background-color: #000000;
 	padding-right: 1.5%;
+	
 	
 	/* Makes sure the nav stays on a fixed position on the screen */
 	position:fixed;
 	margin-top: -2.85%;
 	
 	/* makes a border */
+	/*
 	border-right: solid;
 	border-left: solid;
 	border-bottom: solid;
 	border-width: 0.5%;
 	border-color: #2699FB;
 	
+	
 	/* Makes sure the nav is almost always in front and also in front of the header */
 	z-index: 101;
 	
 	font-size: 80%;
 
+}
+
+nav li 
+{
+	float: right;
 }
 
 .content
@@ -136,7 +167,7 @@ nav
 
 #referalcontent
 {
-	padding-bottom: 10%;
+	padding-bottom: 7%;
 }
 
 /* This section sets up the grid for the sportcontent */
@@ -145,4 +176,40 @@ nav
 	display: grid;
 	grid-gap: 1%;
 	grid-template-columns: 32.7% 32.7% 32.7%;
+}
+
+#CookieStatement
+{
+	/* determines position of the cookiestatement */
+	position: fixed;
+	bottom: 2em;
+	font-size: 80%;
+	
+	/* makes sure the cookiestatement is always in front */
+	z-index: 10000;
+	
+	/* Makes it look fancy */
+	font-size: 80%;
+	background-color: #AAAAAA;
+	padding: 1%;
+	/* makes a border */
+	border: solid;
+	border-width: 0.5%;
+	border-color: #2699FB;
+	
+	margin-left: 75%;
+	
+	
+}
+
+#CookiesHeadLine
+{
+	font-size: 160%;
+}
+
+#Copyright
+{
+	float: left;
+	color: #AAAAAA;
+	padding: 2%;
 }
