@@ -41,27 +41,27 @@ href = "css/style.css"
 			<ul>
 				<li>
 					<a href="#maincontent">
-						Haarlem
+						<button>Haarlem</button>
 					</a>
 				</li>	
 				<li>
 					<a href="#secondarycontent">
-						Haarlem-Oost
+						<button>Haarlem-Oost</button>
 					</a>
 				</li>
 				<li>
 					<a href="#sportcontent">
-						Sportclubs
+						<button>Sportclubs</button>
 					</a>
 				</li>
 				<li>
 					<a href="#referalcontent">
-						Hwa-Rang Dragon taekwondo
+						<button>Hwa-Rang Dragon taekwondo</button>
 					</a>
 				</li>
 				<li>
 					<a href="#contactcontent">
-						Contact
+						<button>Contact</button>
 					</a>
 				</li>
 			</ul>
@@ -80,11 +80,17 @@ href = "css/style.css"
 		
 		<article>
 			<p>
-				The city Haarlem is mostly known for its architecture. There is a beautifull old inner city, but if you look around a bit more you'll find a lot of really clean modern buildings. The trainstation of Haarlem is also very well known for its architecture, because a lot of cast iron was used in it.
+				The city Haarlem is mostly known for its architecture. There is a beautifull old inner city, but if you look around a bit more you'll find a lot of really clean modern buildings. The trainstation of Haarlem is also very well known for its architecture, because a lot of cast iron was used in the construction.
 			</p>
+			
+			<img src="img/HaarlemStation.png" alt="A train stopping at Haarlem station" title="The trainstation in Haarlem">
+			
 			<p>
 				Shopping is also for sure something which you can do plenty in Haarlem. There are more than enough nice looking shopping districts and in the heart of Haarlem lies the "Grote Markt" which is filled with clothingshops, antique and curio shops and countless other shops. Haarlem was even elected multiple times as best shopping city of the Netherlands.
 			</p>
+			
+			<img src="img/.png" alt="" title="">
+			
 			<p>
 				In Haarlem there is a lot of choice when it comes to food and drinks. Lunchrooms, caffeehouses, restaurants, you name it. a quick snack, extensive dinner or just a cup of coffee, it's all in Haarlem.
 			</p>
@@ -108,15 +114,31 @@ href = "css/style.css"
 			<p>
 				There is an area in Haarlem which is called Haarlem-Oost. This area lies east of the inner city of Haarlem. Haarlem-Oost can be divided into three smaller areas, Amsterdamse- and Slachthuiswijk, Parkwijk and the Waarder- and Veerpolder.
 			</p>
+			
+			<img src="img/.png" alt="" title="">
+			
 			<p>
 				The Waarder- and Veerpoler is more of a companyterrain and this is also where the IKEA is located. the IKEA has a really large furniture product range and there is also a restaurant included who have all sorts of swedisch dishes. The IKEA is also very accessible by train if you get off the train at the station called Spaarnwoude.
 			</p>
+			
+			<img src="img/.png" alt="" title="">
+			
 			<p> 
 				The "Beatrixplein" is located in Parkwijk, in there there are loads reastaurants and shops. Fitness center Fitfabriek is located in the middle of parkwijk. There is also a really beautifull park in Parkwijk, that's probably also why it's called "Park"wijk.
 			</p>
+			
+			<img src="img/.png" alt="" title="">
+			
 			<p>
 				In the Amsterdamse- and Slachthuiswijk is a street called the Amsterdamstraat. This street is a long shopping district full of supermarkets, clothingshops and even restaurants. If you're going shopping there anyway, why don't you also go see the iconic "Amsterdamse Poort" which is located at the end of Amsterdamstraat and lies in the Herensingel canal.
 			</p>
+			
+			<p>
+				On the right side of Haarlem there is a big camping site. Here you can rent a place for your car(s), tent(s) and camper(s). There are also log cabins available for rent. You can also rent canoes and bikes to explore nature with. You do have to pay if you want wifi though.
+			</p>
+			
+			<img src="img/camping.png" alt="A camping" title="A camping">
+			
 		<article>
 		
 		<footer>
@@ -355,41 +377,69 @@ href = "css/style.css"
 		<article>
 		
 		<aside>
-			<button href="https://www.taekwon.nl/taekwondo/" type="button">Hwa-Rang Dragon taekwondo</button>
+			<a href="https://www.taekwon.nl/taekwondo/">
+				<button>Go to Hwa-Rang Dragon taekwondo</button>
+			</a>
 		</aside>
 		
 		<footer>
-			
+			Hwa-Rang Dragon is recognized by the Taekwondo Bond Nederland.
 		</footer>
 		
 	</section>
 
 	<section id="contactcontent" class="content">
-		
-		<header>
-			<h3>
-				Contact
-			</h3>
-		</header>
-		
+	
 		<!-- Contact form -->
-		<article>
-			<p>
+		<form action="http://witan.nl/inholland/testform.php">
+			<fieldset id="ContactForm">
+			
+				<legend>
+					<header>
+						<h3>
+							Contact
+						</h3>
+					</header>
+				</legend>
 				
-			</p>
-			<p>
+				<legend>
+					Name:
+				</legend>
+				<input type="text" name="name" placeholder="Tim Kompier" />
 				
-			</p>
-		<article>
-		
-		<footer>
-		
-		</footer>
+				<legend>
+					Email:
+				</legend>
+				<input type="text" name="email" placeholder="example@gmail.com" />
+				
+				<legend>
+					Message:
+				</legend>
+				<input type="text" name="message" placeholder="Your message" />
+				
+				<section>
+					<input type="submit" value="submit">
+				</section>
+			</fieldset>
+		</form>
 		
 	</section>
 
-	<footer>
+	<footer id="Copyright">
+		&copy; Tim Kompier
 	</footer>
+	
+	<article id="CookieStatement">
+		<p id="CookiesHeadLine">
+			This website uses cookies. 
+		</p>
+		
+		<button>Accept</button>
+		
+		<p>
+			for more information about the data that we gather with these cookies click <a href="InformationAboutOurCookies.com">here<a>.
+		</p>
+	</article>
 
 	<!-- background video -->
 	<video autoplay muted loop id="video">
