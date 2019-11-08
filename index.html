@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<title></title>
-
 <head>
+
+<title>Taekwando Haarlem</title>
+
 <meta charset = "utf-8" />
 <meta name = "keywords" content = "Taekwondo, Haarlem, Haarlem-Oost, sportclubs, camping, restaurants, shops, IKEA" />
 <meta name = "description" content = "This is a website about sportclubs in Haarlem-Oost" />
@@ -39,29 +40,29 @@ href = "css/style.css"
 		<nav>
 			
 			<ul>
-				<li>
+				<li class="Button">
 					<a href="#contactcontent">
-						<button>Contact</button>
+						Contact
 					</a>
 				</li>
-				<li>
+				<li class="Button">
 					<a href="#referalcontent">
-						<button>Hwa-Rang Dragon taekwondo</button>
+						Hwa-Rang Dragon taekwondo
 					</a>
 				</li>
-				<li>
+				<li class="Button">
 					<a href="#sportcontent">
-						<button>Sportclubs</button>
+						Sportclubs
 					</a>
 				</li>
-				<li>
+				<li class="Button">
 					<a href="#secondarycontent">
-						<button>Haarlem-Oost</button>
+						Haarlem-Oost
 					</a>
 				</li>
-				<li>
+				<li class="Button">
 					<a href="#maincontent">
-						<button>Haarlem</button>
+						Haarlem
 					</a>
 				</li>	
 			</ul>
@@ -95,6 +96,7 @@ href = "css/style.css"
 			<p>
 				In Haarlem there is a lot of choice when it comes to food and drinks. Lunchrooms, caffeehouses, restaurants, you name it. a quick snack, extensive dinner or just a cup of coffee, it's all in Haarlem.
 			</p>
+			
 		</article>
 		
 		<footer>
@@ -140,7 +142,7 @@ href = "css/style.css"
 				On the right side of Haarlem there is a big camping site. Here you can rent a place for your car(s), tent(s) and camper(s). There are also log cabins available for rent. You can also rent canoes and bikes to explore nature with. You do have to pay if you want wifi though. Luckely pets are alowed there.
 			</p>
 			
-		<article>
+		</article>
 		
 		<footer>
 			Tip: In the park in Parkwijk lies a pancakehouse who have a famous dutch dish called: "poffertjes". These have a lot of similarities to pancakes, but are a lot smaller and a bit thicker.
@@ -153,7 +155,7 @@ href = "css/style.css"
 		<article>
 			<header>
 				<h3>
-					sportclubs
+					Sportclubs
 				</h3>
 			</header>
 			<p>
@@ -373,57 +375,59 @@ href = "css/style.css"
 				Hwa-Rang Dragon not only offers taekwondo lessons, but also Brazilian Jiu Jitsu and Mudo for young and old. The dojo is located in Schalkwijk but on monday they also host a lesson in Heemstede.
 			</p>
 			
+			<footer>
+			Hwa-Rang Dragon is also recognized by the Taekwondo Bond Nederland.
+			</footer>
+		
 			<img id="JiuJitsuImg" src="img/JiuJitsuFoto.png" alt="Two people in a jiu jitsu match" title="jiu jitsu">
 			
-		<article>
+		</article>
 		
-		<aside>
+		<aside class="Button" id="ButtonReferal">
 			<a href="https://www.taekwon.nl/taekwondo/">
-				<button>Go to Hwa-Rang Dragon taekwondo</button>
+				Go to Hwa-Rang Dragon
 			</a>
 		</aside>
-		
-		<footer>
-			Hwa-Rang Dragon is recognized by the Taekwondo Bond Nederland.
-		</footer>
-		
+
 	</section>
 
 	<section id="contactcontent" class="content">
 	
 		<!-- Contact form -->
-		<form action="http://witan.nl/inholland/testform.php">
-			<fieldset id="ContactForm">
+		<form action="http://witan.nl/inholland/testform.php" id="ContactForm">
+		
+			<header>
+				<h3>
+					Contact
+				</h3>
+			</header>
 			
-				<legend>	
-					<header>
-						<h3>
-							Contact
-						</h3>
-					</header>
-				</legend>
-				
+			<fieldset>		
 				<legend>
 					Name:
 				</legend>
 				<input type="text" name="name" placeholder="Tim Kompier" />
-				
+			</fieldset>
+			
+			<fieldset>	
 				<legend>
 					Email:
 				</legend>
 				<input type="text" name="email" placeholder="example@gmail.com" />
-				
+			</fieldset>	
+			
+			<fieldset>	
 				<legend>
 					Message:
 				</legend>
 				<input type="text" name="message" placeholder="Your message" />
-				
+			</fieldset>	
+		
 				<!-- submit button -->
 				<section>
 					<input type="submit" value="submit">
 				</section>
 				
-			</fieldset>
 		</form>
 		
 	</section>
@@ -442,7 +446,7 @@ href = "css/style.css"
 		<button>Accept</button>
 		
 		<p>
-			For more information about the data that we gather with these cookies click <a href="InformationAboutOurCookies.com">here<a>.
+			For more information about the data that we gather with these cookies click <a href="InformationAboutOurCookies.com">here</a>.
 		</p>
 	</article>
 
