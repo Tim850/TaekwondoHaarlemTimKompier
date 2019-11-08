@@ -1,9 +1,14 @@
+/* This makes sure a custom font can be used */
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/roboto-regular-webfont.woff2) format('woff2'),
+         url(../fonts/roboto-regular-webfont.woff) format('woff');
+}
+
 
 body
 {
-	background-color: #FFFFFF;
-	
-	font-family: Arial, Berlin Sans FB;
+	font-family: Arial, /* fallback fonts --> */ Berlin Sans FB, sans-serief, Roboto;
 	font-size : 18px;
 	margin: 0px;
 	padding: 0px;
@@ -30,10 +35,42 @@ h2
 	font-size: 90%;
 }
 
+/* begin image area */
 img
 {
 	max-width: 100%;
 }
+
+#ImgHaarlem1
+{
+	float: right;
+	padding-left: 1.5%;
+}
+
+#ImgHaarlem2
+{
+	float: left;
+	padding-right: 1.5%;
+	
+	max-width: 30%;
+}
+
+#ImgHaarlemOost1
+{
+	float: right;
+	padding-left: 1.5%;
+	
+	max-width: 40%;
+}
+
+#ImgHaarlemOost2
+{
+	float: left;
+	padding-right: 1.5%;
+	
+	max-width: 25%;
+}
+/* end image area */
 
 button
 {
@@ -47,9 +84,13 @@ button
 
 button:hover
 {
+	color: #c1e1ec;
+}
+
+button:focus
+{
 	border-width: 0.25em;
 	padding: 0.55em;
-	color: #c1e1ec;
 }
 
 a
@@ -60,6 +101,12 @@ a
 a:hover
 {
 	color: #c1e1ec;
+}
+
+header > h4
+{
+	font-family: Roboto;
+	font-siz
 }
 
 #TaekwandoImg
@@ -104,22 +151,9 @@ aside
 
 nav
 {
-	/*
-	background-color: #000000;
-	padding-right: 1.5%;
-	
-	
 	/* Makes sure the nav stays on a fixed position on the screen */
 	position:fixed;
 	margin-top: -2.85%;
-	
-	/* makes a border */
-	/*
-	border-right: solid;
-	border-left: solid;
-	border-bottom: solid;
-	border-width: 0.5%;
-	border-color: #2699FB;
 	
 	
 	/* Makes sure the nav is almost always in front and also in front of the header */
@@ -129,6 +163,7 @@ nav
 
 }
 
+/* Makes sure the nav is horizontal */
 nav li 
 {
 	float: right;
@@ -184,6 +219,7 @@ nav li
 	position: fixed;
 	bottom: 2em;
 	font-size: 80%;
+	margin-left: 75%;
 	
 	/* makes sure the cookiestatement is always in front */
 	z-index: 10000;
@@ -192,14 +228,11 @@ nav li
 	font-size: 80%;
 	background-color: #AAAAAA;
 	padding: 1%;
+	
 	/* makes a border */
 	border: solid;
 	border-width: 0.5%;
 	border-color: #2699FB;
-	
-	margin-left: 75%;
-	
-	
 }
 
 #CookiesHeadLine
