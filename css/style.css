@@ -72,25 +72,38 @@ img
 }
 /* end image area */
 
-button
+.Button a
 {
+	display: block;
 	padding: 0.5em;
 	border: solid;
 	border-width: 0.3em;
 	border-color: #707070;
 	background-color: #444444;
+	width: 13.5em;
+	height: 1em;
+	
+	
+	text-decoration: none;
 	color: #add8e6;
 }
 
-button:hover
+.Button a:hover
 {
 	color: #c1e1ec;
 }
 
-button:focus
+.Button a:focus
 {
 	border-width: 0.25em;
 	padding: 0.55em;
+}
+
+#ButtonReferal
+{
+	width: 16.5em;
+	height: 1em;
+	
 }
 
 a
@@ -106,7 +119,7 @@ a:hover
 header > h4
 {
 	font-family: Roboto;
-	font-siz
+	font-size: 95%;
 }
 
 #TaekwandoImg
@@ -124,7 +137,8 @@ header > h4
 
 aside
 {
-	padding-top: 20%;
+	padding-top: 2%;
+	float: right;
 }
 
 #MainHeader
@@ -153,13 +167,16 @@ nav
 {
 	/* Makes sure the nav stays on a fixed position on the screen */
 	position:fixed;
-	margin-top: -2.85%;
+	margin-top: -10.5%;
+	margin-left: 41.5%;
 	
 	
 	/* Makes sure the nav is almost always in front and also in front of the header */
 	z-index: 101;
 	
-	font-size: 80%;
+	/* Makes the text nicer */
+	font-size: 78%;
+	text-align: center;
 
 }
 
@@ -202,7 +219,7 @@ nav li
 
 #referalcontent
 {
-	padding-bottom: 7%;
+	padding-bottom: 22%;
 }
 
 /* This section sets up the grid for the sportcontent */
@@ -245,4 +262,9 @@ nav li
 	float: left;
 	color: #AAAAAA;
 	padding: 2%;
+}
+
+fieldset
+{
+	border: none;
 }
