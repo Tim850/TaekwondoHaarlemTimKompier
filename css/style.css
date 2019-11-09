@@ -144,7 +144,6 @@ aside
 #MainHeader
 {
 	padding: 0.5%;
-	margin-top: 0%;
 	background-color: #000000;
 	
 	/* makes a border */
@@ -158,6 +157,8 @@ aside
 	/* Makes sure the header stays on a fixed position on the screen */
 	position: fixed;
 	margin-top: -10%;
+	margin-right: 40%;
+	
 	
 	/* Makes sure the header is almost always in front */
 	z-index: 100;
@@ -168,22 +169,25 @@ nav
 	/* Makes sure the nav stays on a fixed position on the screen */
 	position:fixed;
 	margin-top: -10.5%;
-	margin-left: 41.5%;
+	margin-left: 45%;
 	
 	
 	/* Makes sure the nav is almost always in front and also in front of the header */
 	z-index: 101;
 	
 	/* Makes the text nicer */
-	font-size: 78%;
+	font-size: 70%;
 	text-align: center;
 
 }
 
-/* Makes sure the nav is horizontal */
 nav li 
 {
+	/* Makes sure the nav is horizontal */
 	float: right;
+	
+	/* Removes the dots */
+	list-style: none;
 }
 
 .content
